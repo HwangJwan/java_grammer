@@ -27,5 +27,22 @@ public class C12Set {
 
 //        백준 : 숫자카드(10815), 프로그래머스 : 폰켓몬
 
+//        집힙관련함수: 교집합, 합집합, 차집합
+//                  retainAll addAll removeAll
+
+
+        Set<String> s1=new HashSet<>();
+        Set<String> s2=new HashSet<>();
+        s1.add("java");
+        s1.add("python");
+        s1.add("C++");
+        s2.add("java ");
+        s2.add("html");
+        s2.add("jcss");
+        s1.retainAll(s2); // s1에는 교집합 남음(java)
+        s1.addAll(s2); // s1에는 합집합 남음(java,python,c++,html,css)
+        s1.removeAll(s2); // s1에는 차집합 남음(python, c++)
+
+
     }
 }
