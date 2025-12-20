@@ -3,7 +3,7 @@ package C05AnonymousLambda;
 import java.util.*;
 
 public class C03ComparatorComparable {
-//    javaㅁ에서는 비교를 위한 인터페이스 대표적으로 2개 제공
+//    java에서는 비교를 위한 인터페이스 대표적으로 2개 제공
 //    Comparator인퍼테이스 : 인터페이스 내 compaerTo메서드만 존재
 //    Comparable인터페이스 : 인터페이스 내 compaer메서드만 존재
 public static void main(String[] args) {
@@ -11,7 +11,7 @@ public static void main(String[] args) {
     myList.add(20);
     myList.add(10);
     myList.add(30);
-//    java의 대부분의 정렬함수는 매개변수로 Comparator객체 요규
+//    java의 대부분의 정렬함수는 매개변수로 Comparator객체 요구
     myList.sort(Comparator.naturalOrder());
 //    o1과 o2의 숫자값을 마이너스 형식으로 코딩을 하되,
 //    o1이 먼저있으면 오름차순, o2가 먼저 있으면 내림차순
